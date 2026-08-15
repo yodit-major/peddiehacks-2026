@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #f4f8f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #17221b;
+}
+
+.welcome-container {
+    width: 90%;
+    max-width: 520px;
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.logo {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+h1 span {
+    color: #2e8b57;
+}
+
+.tagline {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #5b665f;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    background: #2e8b57;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.small-text {
+    margin-top: 25px;
+    color: #68736c;
+    font-size: 14px;
+}
+.screen {
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.screen.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 520px;
+    padding: 35px 25px;
+}
+
+.form-header {
+    margin-bottom: 30px;
+}
+
+.step {
+    font-size: 12px;
+    font-weight: bold;
+    color: #2e8b57;
+    letter-spacing: 1px;
+}
+
+.form-header h2 {
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+.form-header p {
+    color: #68736c;
+    line-height: 1.5;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d4ddd7;
+    border-radius: 10px;
+    font-size: 16px;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: 2px solid #2e8b57;
+    border-color: transparent;
+}
+
+.continue-btn {
+    width: 100%;
+    margin-top: 10px;
+}

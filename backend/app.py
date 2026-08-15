@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 from models import db
 from routes.profile import profile_bp
 from routes.activities import activities_bp
@@ -8,6 +9,7 @@ from progress import progress_bp
 
 
 app = Flask(__name__)
+CORS(app)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///scroll2sport.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
