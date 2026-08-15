@@ -138,3 +138,92 @@ button:hover {
     width: 100%;
     margin-top: 10px;
 }
+.recommendation-container {
+    width: 90%;
+    max-width: 520px;
+    padding: 35px 25px;
+}
+
+.eyebrow {
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #2e8b57;
+    letter-spacing: 1px;
+}
+
+.recommendation-container h2 {
+    font-size: 34px;
+    margin: 10px 0 25px;
+}
+
+.activity-card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    margin-bottom: 20px;
+}
+
+.activity-icon {
+    font-size: 55px;
+}
+
+.activity-info p {
+    margin: 8px 0;
+    color: #5b665f;
+}
+
+.recommendation-description {
+    color: #68736c;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+#startWorkoutBtn {
+    width: 100%;
+}
+.workout-container {
+    width: 90%;
+    max-width: 520px;
+    text-align: center;
+    padding: 35px 25px;
+}
+
+.workout-container h2 {
+    font-size: 32px;
+    margin: 12px 0 35px;
+}
+
+.timer-circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: white;
+    margin: 0 auto 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+#timer {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2e8b57;
+}
+
+.workout-instructions {
+    color: #68736c;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#completeWorkoutBtn {
+    width: 100%;
+}
