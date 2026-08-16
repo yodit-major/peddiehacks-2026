@@ -44,7 +44,7 @@ Instead of simply telling users to stop scrolling, Scroll2Sport encourages them 
 
 
 
-\---
+
 
 
 
@@ -74,7 +74,7 @@ We wanted to create a simple and inclusive way to encourage people to move more.
 
 
 
-\---
+
 
 
 
@@ -130,7 +130,7 @@ The application allows users to:
 
 
 
-\---
+
 
 
 
@@ -176,7 +176,7 @@ Our goal is not to force everyone into the same workout, but to help users find 
 
 
 
-\---
+
 
 
 
