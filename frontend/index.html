@@ -29,13 +29,228 @@
                 that fit your body, schedule, and lifestyle.
             </p>
 
-            <button id="getStartedBtn">
-                Get Started →
-            </button>
+            <div class="welcome-buttons">
+
+                <button id="getStartedBtn">
+                    Create Account →
+                </button>
+
+                <button
+                    id="loginBtn"
+                    class="secondary-btn"
+                >
+                    Login
+                </button>
+
+            </div>
 
             <p class="small-text">
                 Movement for everyone ♿
             </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Authentication Screen -->
+    <section id="authScreen" class="screen">
+
+        <div class="form-container">
+
+            <div class="form-header">
+
+                <span class="step">
+                    WELCOME TO SCROLL2SPORT
+                </span>
+
+                <h2 id="authTitle">
+                    Create your account
+                </h2>
+
+                <p id="authDescription">
+                    Create an account to save your
+                    progress and personalized movements.
+                </p>
+
+            </div>
+
+
+            <!-- Register Form -->
+            <form id="registerForm">
+
+                <div class="form-group">
+
+                    <label for="registerUsername">
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="registerUsername"
+                        placeholder="Choose a username"
+                        minlength="3"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="registerPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        placeholder="At least 6 characters"
+                        minlength="6"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="continue-btn"
+                >
+                    Create Account →
+                </button>
+
+            </form>
+
+
+            <!-- Login Form -->
+            <form
+                id="loginForm"
+                style="display: none;"
+            >
+
+                <div class="form-group">
+
+                    <label for="loginUsername">
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="loginUsername"
+                        placeholder="Enter your username"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="continue-btn"
+                >
+                    Login →
+                </button>
+
+            </form>
+
+
+            <!-- Switch Authentication Mode -->
+
+            <p class="small-text">
+
+                <span id="authSwitchText">
+                    Already have an account?
+                </span>
+
+                <button
+                    type="button"
+                    id="switchAuthBtn"
+                    class="text-button"
+                >
+                    Login
+                </button>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Scroll Break Screen -->
+    <section id="scrollBreakScreen" class="screen">
+
+        <div class="scroll-break-container">
+
+            <span class="step">
+                SCROLL2SPORT
+            </span>
+
+            <div class="scroll-icon">
+                📱
+            </div>
+
+            <h2>
+                Ready to turn scrolling into movement?
+            </h2>
+
+            <p class="scroll-break-description">
+                Take a short break from your screen and
+                replace scrolling time with movement.
+            </p>
+
+
+            <div class="scroll-status-card">
+
+                <p class="scroll-status-label">
+                    YOUR SCROLL SESSION
+                </p>
+
+                <div
+                    id="scrollTimer"
+                    class="scroll-timer"
+                >
+                    00:00
+                </div>
+
+                <p id="scrollStatus">
+                    Your scroll session hasn't started yet.
+                </p>
+
+            </div>
+
+
+            <button id="startScrollBtn">
+                Start Scroll Session 📱
+            </button>
+            <button id="startMovementNowBtn" class="secondary-btn">
+                🏃 I'm Ready to Move Now
+            </button>
+
+            <button
+                id="stopScrollBtn"
+                class="secondary-btn"
+                style="display: none;"
+            >
+                I'm Ready to Move 🏃
+            </button>
 
         </div>
 
@@ -48,14 +263,20 @@
         <div class="form-container">
 
             <div class="form-header">
-                <span class="step">STEP 1 OF 2</span>
 
-                <h2>Tell us about you</h2>
+                <span class="step">
+                    STEP 1 OF 2
+                </span>
+
+                <h2>
+                    Tell us about you
+                </h2>
 
                 <p>
                     We'll use this information to find
                     movements that work for you.
                 </p>
+
             </div>
 
 
@@ -109,38 +330,41 @@
                     </select>
 
                 </div>
-<!-- Goal -->
-<div class="form-group">
 
-    <label for="goal">
-        What's your goal?
-    </label>
 
-    <select id="goal" required>
+                <!-- Goal -->
+                <div class="form-group">
 
-        <option value="">
-            Select your goal
-        </option>
+                    <label for="goal">
+                        What's your goal?
+                    </label>
 
-        <option value="Stay active">
-            Stay active
-        </option>
+                    <select id="goal" required>
 
-        <option value="Improve fitness">
-            Improve fitness
-        </option>
+                        <option value="">
+                            Select your goal
+                        </option>
 
-        <option value="Reduce screen time">
-            Reduce screen time
-        </option>
+                        <option value="Stay active">
+                            Stay active
+                        </option>
 
-        <option value="Improve mobility">
-            Improve mobility
-        </option>
+                        <option value="Improve fitness">
+                            Improve fitness
+                        </option>
 
-    </select>
+                        <option value="Reduce screen time">
+                            Reduce screen time
+                        </option>
 
-</div>
+                        <option value="Improve mobility">
+                            Improve mobility
+                        </option>
+
+                    </select>
+
+                </div>
+
 
                 <!-- Movement condition -->
                 <div class="form-group">
@@ -232,7 +456,10 @@
                 </div>
 
 
-                <button type="submit" class="continue-btn">
+                <button
+                    type="submit"
+                    class="continue-btn"
+                >
                     Find My Movement →
                 </button>
 
@@ -242,87 +469,187 @@
 
     </section>
 
-<!-- Recommendation Screen -->
-<section id="recommendationScreen" class="screen">
 
-    <div class="recommendation-container">
+    <!-- Recommendation Screen -->
+    <section id="recommendationScreen" class="screen">
 
-        <span class="step">STEP 2 OF 2</span>
+        <div class="recommendation-container">
 
-        <p class="eyebrow">YOUR MOVEMENT BREAK</p>
-
-        <h2 id="recommendationTitle">
-            Finding your movement...
-        </h2>
-
-        <div class="activity-card">
-
-            <div class="activity-icon">
-                🏃
-            </div>
-
-            <div class="activity-info">
-
-                <p>
-                    <strong>Duration:</strong>
-                    <span id="recommendationDuration">-</span>
-                </p>
-
-                <p>
-                    <strong>Level:</strong>
-                    <span id="recommendationDifficulty">-</span>
-                </p>
-
-                <p>
-                    <strong>Type:</strong>
-                    <span id="recommendationType">-</span>
-                </p>
-
-            </div>
-
-        </div>
-
-        <p id="recommendationDescription" class="recommendation-description">
-            We'll find a movement that fits your profile.
-        </p>
-
-        <button id="startWorkoutBtn">
-            Start Workout →
-        </button>
-
-    </div>
-
-</section>
-<!-- Workout Screen -->
-<section id="workoutScreen" class="screen">
-
-    <div class="workout-container">
-
-        <span class="step">YOUR MOVEMENT</span>
-
-        <h2 id="workoutTitle">
-            Your Workout
-        </h2>
-
-        <div class="timer-circle">
-
-            <span id="timer">
-                00:00
+            <span class="step">
+                STEP 2 OF 2
             </span>
 
+            <p class="eyebrow">
+                YOUR MOVEMENT BREAK
+            </p>
+
+            <h2 id="recommendationTitle">
+                Finding your movement...
+            </h2>
+
+            <div class="activity-card">
+
+                <div class="activity-icon">
+                    🏃
+                </div>
+
+                <div class="activity-info">
+
+                    <p>
+                        <strong>Duration:</strong>
+                        <span id="recommendationDuration">
+                            -
+                        </span>
+                    </p>
+
+                    <p>
+                        <strong>Level:</strong>
+                        <span id="recommendationDifficulty">
+                            -
+                        </span>
+                    </p>
+
+                    <p>
+                        <strong>Type:</strong>
+                        <span id="recommendationType">
+                            -
+                        </span>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <p
+                id="recommendationDescription"
+                class="recommendation-description"
+            >
+                We'll find a movement that fits your profile.
+            </p>
+
+            <button id="startWorkoutBtn">
+                Start Workout →
+            </button>
+
         </div>
 
-        <p id="workoutInstructions" class="workout-instructions">
-            Follow the movement instructions.
-        </p>
+    </section>
 
-        <button id="completeWorkoutBtn">
-            Complete Workout ✓
-        </button>
 
-    </div>
+    <!-- Workout Screen -->
+    <section id="workoutScreen" class="screen">
 
-</section>
+        <div class="workout-container">
+
+            <span class="step">
+                YOUR MOVEMENT
+            </span>
+
+            <h2 id="workoutTitle">
+                Your Workout
+            </h2>
+
+            <div class="timer-circle">
+
+                <span id="timer">
+                    00:00
+                </span>
+
+            </div>
+
+            <p
+                id="workoutInstructions"
+                class="workout-instructions"
+            >
+                Follow the movement instructions.
+            </p>
+
+            <button id="completeWorkoutBtn">
+                Complete Workout ✓
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Progress Screen -->
+    <section id="progressScreen" class="screen">
+
+        <div class="progress-container">
+
+            <span class="step">
+                YOUR PROGRESS
+            </span>
+
+            <h2>
+                Keep Moving! 🎉
+            </h2>
+
+
+            <div class="progress-stats">
+
+                <div class="stat-card">
+
+                    <span id="totalWorkouts">
+                        0
+                    </span>
+
+                    <p>
+                        Workouts
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span id="totalMinutes">
+                        0
+                    </span>
+
+                    <p>
+                        Minutes Moved
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Workout History -->
+            <div class="workout-history">
+
+                <h3>
+                    Recent Workouts
+                </h3>
+
+                <div id="workoutHistoryList">
+
+                    <p>
+                        No workouts yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <p class="progress-message">
+                Every movement break counts.
+                Keep taking care of yourself!
+            </p>
+
+
+            <button id="backHomeBtn">
+                Back to Home
+            </button>
+
+        </div>
+
+    </section>
+
+
     <script src="script.js"></script>
 
 </body>
