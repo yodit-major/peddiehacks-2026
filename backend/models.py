@@ -1,16 +1,47 @@
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
-
-
+ 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    age = db.Column(db.Integer, nullable=False)
-    fitness_level = db.Column(db.String(50), nullable=False)
-    goal = db.Column(db.String(100), nullable=False)
-    available_time = db.Column(db.Integer, nullable=False)
-    movement_type = db.Column(db.String(50), nullable=False)
-    equipment = db.Column(db.String(100), nullable=True)
+
+    username = db.Column(
+        db.String(80),
+        unique=True,
+        nullable=False
+    )
+
+    password_hash = db.Column(
+        db.String(255),
+        nullable=False
+    )
+
+    age = db.Column(db.Integer, nullable=True)
+
+    fitness_level = db.Column(
+        db.String(50),
+        nullable=True
+    )
+
+    goal = db.Column(
+        db.String(100),
+        nullable=True
+    )
+
+    available_time = db.Column(
+        db.Integer,
+        nullable=True
+    )
+
+    movement_type = db.Column(
+        db.String(50),
+        nullable=True
+    )
+
+    equipment = db.Column(
+        db.String(100),
+        nullable=True
+    )
 
 class Activity(db.Model):
     id = db.Column(db.Integer, primary_key=True)

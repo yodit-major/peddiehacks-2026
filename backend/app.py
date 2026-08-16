@@ -1,4 +1,5 @@
 from flask import Flask
+from auth import auth_bp
 from flask_cors import CORS
 from models import db
 from routes.profile import profile_bp
@@ -20,6 +21,7 @@ app.register_blueprint(activities_bp)
 app.register_blueprint(recommendations_bp)
 app.register_blueprint(workouts_bp)
 app.register_blueprint(progress_bp)
+app.register_blueprint(auth_bp)
 
 @app.route("/")
 def home():

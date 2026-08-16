@@ -118,19 +118,6 @@ let scrollElapsedSeconds = 0;
 let workoutInterval = null;
 let workoutElapsedSeconds = 0;
 
-
-/*
-   TESTING:
-
-   30 seconds = reminder after 30 seconds.
-
-   AFTER TESTING CHANGE TO:
-
-   const SCROLL_REMINDER_SECONDS = 30 * 60;
-
-   That means 30 minutes.
-*/
-
 const SCROLL_REMINDER_SECONDS = 30 * 60;
 
 
